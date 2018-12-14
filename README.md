@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ferderer/evelikto-di.svg?branch=master)](https://travis-ci.com/ferderer/evelikto-di)
+
 # evelikto-di
 The most flexible (ευέλικτος!) dependency injection container of the world for PHP. Use just the features you want without runtime configuration costs.
 
