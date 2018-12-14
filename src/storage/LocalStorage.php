@@ -16,7 +16,7 @@ trait LocalStorage
      * @param   string  $name  Dependency name.
      * @return  mixed          Retrieved value or null if not previously stored.
      */
-    protected function fromLocal($name) {
+    protected function fromLocal(string $name) {
         return array_key_exists($name, $this->storage) ? $this->storage[$name] : null;
     }
 

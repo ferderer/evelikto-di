@@ -25,7 +25,7 @@ trait SessionStorage
      * @param   string  $name  Dependency name.
      * @return  mixed          Retrieved value or null if not previously stored.
      */
-    protected function fromSession($name) {
+    protected function fromSession(string $name) {
         return $this->sessionStorage->fetch($name);
     }
 
