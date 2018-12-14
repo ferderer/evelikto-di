@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<phpunit
-    bootstrap="test/_bootstrap.php"
-    backupGlobals="false"
-    backupStaticAttributes="false"
-    colors="true"
-    verbose="true"
-    convertErrorsToExceptions="true"
-    convertNoticesToExceptions="true"
-    convertWarningsToExceptions="true"
-    processIsolation="false"
-    stopOnFailure="false"
->
+<phpunit bootstrap="test/_bootstrap.php" backupGlobals="false">
     <testsuites>
         <testsuite name="Evelikto DI Test Suite">
             <directory>test</directory>
