@@ -1,0 +1,31 @@
+{
+	"name" : "evelikto/di",
+	"description" : "The most flexible (ευέλικτος!) dependency injection container for PHP",
+	"keywords" : ["dependency injection", "di", "ioc", "evelikto"],
+	"homepage" : "https://evelikto.info/",
+	"license" : "MIT",
+	"authors" : [{
+		"name" : "Vadim Ferderer",
+		"email": "vadim@evelikto.info"
+	}],
+	"support": {
+		"issues": "https://github.com/ferderer/evelikto-di/issues",
+		"source": "https://github.com/ferderer/evelikto-di/"
+	},
+	"require" : {
+		"php": ">=7.0.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit": "^7"
+	},
+	"autoload": {
+		"psr-4": {
+			"evelikto\\di\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"evelikto\\test\\": "test/"
+		}
+	}
+}
