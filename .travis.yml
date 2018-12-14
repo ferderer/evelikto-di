@@ -1,11 +1,15 @@
+sudo: false
 language: php
 
 php:
     - 7.1
     - 7.2
 
-install:
-    - travis_retry composer install --no-interaction --prefer-dist
+before_install:
+    - echo yes | pecl upgrade apcu
 
-script:
-    - vendor/bin/phpunit
+install:
+    - rm composer.lock
+    - travis_retry composer update --no-interaction --prefer-dist
+
+script: ./vendor/bin/phpunit
