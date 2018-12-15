@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/ferderer/evelikto-di.svg?branch=master)](https://travis-ci.com/ferderer/evelikto-di)
-[![Coverage](https://codecov.io/gh/ferderer/di/branch/master/graph/badge.svg)](https://codecov.io/gh/ferderer/di)
+[![Coverage](https://codecov.io/gh/ferderer/evelikto-di/branch/master/graph/badge.svg)](https://codecov.io/gh/ferderer/evelikto-di)
 
 # evelikto-di
 The most flexible (ευέλικτος!) dependency injection container of the world for PHP. Use just the features you want without runtime configuration costs.
