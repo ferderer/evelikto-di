@@ -2,15 +2,19 @@ sudo: false
 language: php
 
 php:
-    - 7.1
-    - 7.2
+  - 7.1
+  - 7.2
 
 before_install:
-    - pecl channel-update pecl.php.net
-    - echo yes | pecl upgrade apcu
-    - phpenv config-add ./test/travis/php.ini
+  - pecl channel-update pecl.php.net
+  - echo yes | pecl upgrade apcu
+  - phpenv config-add ./test/travis/php.ini
 
 install:
-    - travis_retry composer update --no-interaction --prefer-dist
+  - travis_retry composer update --no-interaction --prefer-dist
 
-script: ./vendor/bin/phpunit
+script:
+  - ./vendor/bin/phpunit --coverage-clover coverage.xml
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
